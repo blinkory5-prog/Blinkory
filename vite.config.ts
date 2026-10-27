@@ -87,6 +87,7 @@ function apiDevPlugin(): Plugin {
 
 export default defineConfig(() => {
   return {
+    base: './',
     plugins: [react(), tailwindcss(), apiDevPlugin()],
     resolve: {
       alias: {
